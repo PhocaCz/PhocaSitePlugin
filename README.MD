@@ -1,0 +1,1 @@
+Phoca Site Plugin is Joomla! CMS extension. Plugin which adds system information into website.
