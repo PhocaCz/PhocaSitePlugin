@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension group="system" method="upgrade" type="plugin" version="3">
+<extension type="plugin" group="system" method="upgrade" version="4.0">
 	<name>plg_system_phocasite</name>
-	<creationDate>23/08/2013</creationDate>
 	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>07/06/2022</creationDate>
 	<authorEmail></authorEmail>
-	<authorUrl>www.phoca.cz</authorUrl>
+	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>3.0.0</version>
-	
+	<version>4.0.0</version>
 	<description>PLG_SYSTEM_PHOCASITE_DESCRIPTION</description>
-	
+	<projectName>PhocaSitePlugin</projectName>
+
 	<files>
 		<folder>models</folder>
+		<filename plugin="phocasite">index.html</filename>
 		<filename plugin="phocasite">phocasite.php</filename>
-		<filename >index.html</filename>
 	</files>
-	
+
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.plg_system_phocasite.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.plg_system_phocasite.sys.ini</language>
 	</languages>
-	
+
 	<administration>
 		<languages>
 			<language tag="en-GB">language/en-GB/en-GB.plg_system_phocasite.ini</language>
@@ -29,24 +29,28 @@
 		</languages>
 	</administration>
 	
-<config>
+	<config>
 		<fields name="params" addfieldpath="/plugins/system/phocasite/models/fields">
 			<fieldset name="basic">	
 		
 			<field name="phocahead1" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_HTML_ATTRIBUTE" label="" description=""/>	
 			
-			<field name="html_xmlns_tags" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_HTML_XMLNS_ATTRIBS_LABEL" description="PLG_SYSTEM_PHOCASITE_HTML_XMLNS_ATTRIBS_DESC" />
+			<field name="html_xmlns_tags" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_HTML_XMLNS_ATTRIBS_LABEL" description="PLG_SYSTEM_PHOCASITE_HTML_XMLNS_ATTRIBS_DESC"/>
 			
 			<field name="phocahead2" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_HEAD_TAG" label="" description=""/>				
 			
-			<field name="head_ga_uaid" type="text" default="" label="PLG_SYSTEM_PHOCASITE_HEAD_GA_UAID_LABEL" description="PLG_SYSTEM_PHOCASITE_HEAD_GA_UAID_DESC" />
-			<field name="head_custom_code" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_HEAD_CUSTOM_CODE_LABEL" description="PLG_SYSTEM_PHOCASITE_HEAD_CUSTOM_CODE_DESC" />
+			<field name="head_ga_uaid" type="text" default="" label="PLG_SYSTEM_PHOCASITE_HEAD_GA_UAID_LABEL" description="PLG_SYSTEM_PHOCASITE_HEAD_GA_UAID_DESC"/>
+			<field name="head_custom_code" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_HEAD_CUSTOM_CODE_LABEL" description="PLG_SYSTEM_PHOCASITE_HEAD_CUSTOM_CODE_DESC"/>
 			
 			<field name="phocahead3" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_BODY_TAG" label="" description=""/>				
 			
-			<field name="body_custom_code" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_BODY_CUSTOM_CODE_LABEL" description="PLG_SYSTEM_PHOCASITE_BODY_CUSTOM_CODE_DESC" />
+			<field name="body_custom_code" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_BODY_CUSTOM_CODE_LABEL" description="PLG_SYSTEM_PHOCASITE_BODY_CUSTOM_CODE_DESC"/>
 		
 			</fieldset>
 		</fields>
 	</config>
+
+	<updateservers>
+		<server type="extension" name="PLG_SYSTEM_PHOCASITE" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaSitePlugin/master/manifest.xml]]></server>
+	</updateservers>
 </extension>

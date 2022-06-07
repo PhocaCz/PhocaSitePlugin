@@ -1,0 +1,42 @@
+<updates>
+	<update>
+		<name><![CDATA[ Phoca Site Plugin ]]></name>
+		<description><![CDATA[ Phoca Site Plugin - adding different parts of code to HTML code of site. ]]></description>
+		<element>phocasite</element>
+		<folder>system</folder>
+		<type>plugin</type>
+		<version>3.0.2</version>
+		<infourl title="Phoca Site Plugin 3.0.2">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaSitePlugin/releases/download/3.0.2/plg_system_phocasite_v3.0.2.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="3.([89]|10)"/>
+		<client>site</client>
+	</update>
+	<update>
+		<name><![CDATA[ Phoca Site Plugin ]]></name>
+		<description><![CDATA[ Phoca Site Plugin - adding different parts of code to HTML code of site. ]]></description>
+		<element>phocasite</element>
+		<folder>system</folder>
+		<type>plugin</type>
+		<version>4.0.0</version>
+		<infourl title="Phoca Site Plugin 4.0.0">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaSitePlugin/releases/download/4.0.0/plg_system_phocasite_v4.0.0.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="4.[012]"/>
+		<client>site</client>
+	</update>
+</updates>

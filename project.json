@@ -1,0 +1,18 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaSitePlugin",
+	"extensionName": "Phoca Site Plugin",
+	"projectInitials" : "PS",
+	"description": "Phoca Site Plugin - adding different parts of code to HTML code of site.",
+	"projectUrl": "https://www.phoca.cz/phoca-site-plugin",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/category/69-phoca-site-plugin",
+	"projectMainComponent": "",
+	"projectMainComponentInfoUrl": "",
+	"projectDemo" : {
+		"Phoca": "https://www.phoca.cz"
+	},
+	"projectColor": "#895ED1"
+}
