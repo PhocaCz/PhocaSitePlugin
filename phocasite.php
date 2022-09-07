@@ -61,6 +61,7 @@ class plgSystemPhocaSite extends JPlugin
 		$head 	= $html = $body = '';
 
 		$prm['head_ga_uaid'] 			= $this->params->get('head_ga_uaid', '');
+		$prm['head_ga_uaid_options'] 	= $this->params->get('head_ga_uaid_options', '');// e.g. 'anonymize_ip': true, 'allow_display_features': false
 		$prm['html_xmlns_tags'] 		= $this->params->get('html_xmlns_tags', '');
 		$prm['body_custom_code'] 		= $this->params->get('body_custom_code', '');
 
@@ -90,14 +91,14 @@ class plgSystemPhocaSite extends JPlugin
 </script>';*/
 
 $head .= '
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id='.strip_tags($prm['head_ga_uaid']).'"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){window.dataLayer.push(arguments);}
   gtag(\'js\', new Date());
 
-  gtag(\'config\', \''.strip_tags($prm['head_ga_uaid']).'\', { \'anonymize_ip\': true, \'allow_display_features\': false });
+  gtag(\'config\', \''.strip_tags($prm['head_ga_uaid']).'\', { '.$prm['head_ga_uaid_options'].' });
   
 </script>';
 		}
@@ -109,7 +110,15 @@ $head .= '
 			$set = true;
 		}
 		if ($head != ''){
-			$buffer = str_replace ("</head>", $head. "</head>", $buffer);
+			//$buffer = str_replace ("</head>", $head. "</head>", $buffer);
+			// Needs to be added to top of the scripts
+			$haystack = $buffer;
+			$needle = "<script";
+			$pos = strpos($haystack, $needle);
+			if ($pos !== false) {
+				$buffer = substr_replace($haystack, $head. "<script", $pos, strlen($needle));
+			}
+			//$buffer = str_replace ("<script", $head. "<script", $buffer);
 			$set = true;
 		}
 		if ($body != ''){

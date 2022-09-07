@@ -2,12 +2,12 @@
 <extension type="plugin" group="system" method="upgrade" version="4.0">
 	<name>plg_system_phocasite</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>07/06/2022</creationDate>
+	<creationDate>07/09/2022</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.0</version>
+	<version>4.0.1</version>
 	<description>PLG_SYSTEM_PHOCASITE_DESCRIPTION</description>
 	<projectName>PhocaSitePlugin</projectName>
 
@@ -31,21 +31,22 @@
 	
 	<config>
 		<fields name="params" addfieldpath="/plugins/system/phocasite/models/fields">
-			<fieldset name="basic">	
-		
-			<field name="phocahead1" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_HTML_ATTRIBUTE" label="" description=""/>	
-			
+			<fieldset name="basic">
+
+			<field name="phocahead1" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_HTML_ATTRIBUTE" label="" description=""/>
+
 			<field name="html_xmlns_tags" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_HTML_XMLNS_ATTRIBS_LABEL" description="PLG_SYSTEM_PHOCASITE_HTML_XMLNS_ATTRIBS_DESC"/>
-			
-			<field name="phocahead2" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_HEAD_TAG" label="" description=""/>				
-			
+
+			<field name="phocahead2" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_HEAD_TAG" label="" description=""/>
+
 			<field name="head_ga_uaid" type="text" default="" label="PLG_SYSTEM_PHOCASITE_HEAD_GA_UAID_LABEL" description="PLG_SYSTEM_PHOCASITE_HEAD_GA_UAID_DESC"/>
+			<field name="head_ga_uaid_options" type="text" default="" label="PLG_SYSTEM_PHOCASITE_HEAD_GA_UAID_OPTIONS_LABEL" description="PLG_SYSTEM_PHOCASITE_HEAD_GA_UAID_OPTIONS_DESC"/>
 			<field name="head_custom_code" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_HEAD_CUSTOM_CODE_LABEL" description="PLG_SYSTEM_PHOCASITE_HEAD_CUSTOM_CODE_DESC"/>
-			
-			<field name="phocahead3" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_BODY_TAG" label="" description=""/>				
-			
+
+			<field name="phocahead3" type="phocasitehead" default="PLG_SYSTEM_PHOCASITE_BODY_TAG" label="" description=""/>
+
 			<field name="body_custom_code" type="textarea" rows="8" cols="60" default="" filter="raw" label="PLG_SYSTEM_PHOCASITE_BODY_CUSTOM_CODE_LABEL" description="PLG_SYSTEM_PHOCASITE_BODY_CUSTOM_CODE_DESC"/>
-		
+
 			</fieldset>
 		</fields>
 	</config>

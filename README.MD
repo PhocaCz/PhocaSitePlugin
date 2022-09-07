@@ -56,7 +56,7 @@ Phoca Site Plugin - adding different parts of code to HTML code of site.
 
 ## Version (Joomla! 4.x)
 
-4.0.0
+4.0.1
 
 
 
