@@ -8,13 +8,14 @@
  */
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Form\FormField;
 use Joomla\CMS\Language\Text;
 
 defined('JPATH_BASE') or die;
 jimport('joomla.html.html');
 jimport('joomla.form.formfield');
 
-class JFormFieldPhocaSiteHead extends JFormField
+class JFormFieldPhocaSiteHead extends FormField
 {
 	protected $type = 'PhocaSiteHead';
 

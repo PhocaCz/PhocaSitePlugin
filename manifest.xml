@@ -1,3 +1,4 @@
+<?xml version="1.0" ?>
 <updates>
 	<update>
 		<name><![CDATA[ Phoca Site Plugin ]]></name>
@@ -36,7 +37,49 @@
 		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
-		<targetplatform name="joomla" version="4.[012]"/>
+		<targetplatform name="joomla" version="4\.*"/>
+		<client>site</client>
+	</update>
+	<update>
+		<name><![CDATA[ Phoca Site Plugin ]]></name>
+		<description><![CDATA[ Phoca Site Plugin - adding different parts of code to HTML code of site. ]]></description>
+		<element>phocasite</element>
+		<folder>system</folder>
+		<type>plugin</type>
+		<version>5.0.0</version>
+		<infourl title="Phoca Site Plugin 5.0.0">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaSitePlugin/releases/download/5.0.0/plg_system_phocasite_v5.0.0.zip</downloadurl>
+		</downloads>
+		<sha512>66a212c5f5902f3d0e2547b8d6c4e37982e1747dca5bd6a545b136b9a7e60cc4326e1ed35df67a3297d6c3ba27f0c2df1a022911c5b905d0e8d391f3ead8ec51</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="5\.*"/>
+		<client>site</client>
+	</update>
+	<update>
+		<name><![CDATA[ Phoca Site Plugin ]]></name>
+		<description><![CDATA[ Phoca Site Plugin - adding different parts of code to HTML code of site. ]]></description>
+		<element>phocasite</element>
+		<folder>system</folder>
+		<type>plugin</type>
+		<version>6.0.0</version>
+		<infourl title="Phoca Site Plugin 6.0.0">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaSitePlugin/releases/download/6.0.0/plg_system_phocasite_v6.0.0.zip</downloadurl>
+		</downloads>
+		<sha512>de2938e527daaacc4e8ac0b24ccc202dd3146d2dd75ed0e7360d7fac9d40de58dd5411941b6376e2ad821f6c4d4c5d9f4205a39afb718357bfb0fd769d0dcca3</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="(5|6)\.*"/>
 		<client>site</client>
 	</update>
 </updates>

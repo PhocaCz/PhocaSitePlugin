@@ -8,11 +8,12 @@
  */
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Plugin\CMSPlugin;
 
 defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.plugin.plugin' );
 
-class plgSystemPhocaSite extends JPlugin
+class plgSystemPhocaSite extends CMSPlugin
 {
 
 	public function __construct(& $subject, $config) {
@@ -23,7 +24,7 @@ class plgSystemPhocaSite extends JPlugin
 
 		$app 	    = Factory::getApplication();
         $document	= Factory::getDocument();
-		$input 	= $app->input;
+		$input 	= $app->getInput();
 		if ($app->getName() != 'site') {
 			return true;
 		}
@@ -52,7 +53,7 @@ class plgSystemPhocaSite extends JPlugin
 			return true;
 		}
 
-		$format = $app->input->get('format', '', 'string');
+		$format = $app->getInput()->get('format', '', 'string');
 		if ($format=='feed') {
 			return true;
 		}
@@ -89,7 +90,7 @@ class plgSystemPhocaSite extends JPlugin
   })();
 
 </script>';*/
-
+/*
 $head .= '
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id='.strip_tags($prm['head_ga_uaid']).'"></script>
@@ -99,8 +100,20 @@ $head .= '
   gtag(\'js\', new Date());
 
   gtag(\'config\', \''.strip_tags($prm['head_ga_uaid']).'\', { '.$prm['head_ga_uaid_options'].' });
-  
+
 </script>';
+*/
+$head .= '
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='.strip_tags($prm['head_ga_uaid']).'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(\'js\', new Date());
+
+  gtag(\'config\', \''.strip_tags($prm['head_ga_uaid']).'\', { '.$prm['head_ga_uaid_options'].' });
+</script>';
+
 		}
 
 		$set = false;

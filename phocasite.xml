@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="plugin" group="system" method="upgrade" version="4.0">
+<extension type="plugin" group="system" method="upgrade" version="6.0">
 	<name>plg_system_phocasite</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>07/09/2022</creationDate>
+	<creationDate>21/10/2025</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.1</version>
+	<version>6.0.0</version>
 	<description>PLG_SYSTEM_PHOCASITE_DESCRIPTION</description>
 	<projectName>PhocaSitePlugin</projectName>
 
